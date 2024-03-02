@@ -46,10 +46,13 @@ async function main() {
     "Darren",
     "Greg",
   ];
-  const message = arrayResult[Math.floor(Math.random() * arrayResult.length)].toLowerCase();
+  const message =
+    arrayResult[Math.floor(Math.random() * arrayResult.length)].toLowerCase();
 
   if (message.includes("XNAMEX")) {
-    console.log(message.replace("XNAMEX", names[Math.floor(Math.random() * names.length)]));
+    console.log(
+      message.replace("XNAMEX", names[Math.floor(Math.random() * names.length)])
+    );
   } else {
     console.log(message);
   }
