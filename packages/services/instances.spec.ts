@@ -6,8 +6,7 @@ describe("instances test", () => {
     // Arrange
     const customHeader = "self";
     // Acts
-    console.log(proxy);
     // Assert
-    expect(proxy).toBeDefined();
+    expect(proxy.defaults.headers["X-Custom-Header"]).toBe("self");
   });
 });
