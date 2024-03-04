@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
+import { Heading } from "@/packages/components/typography";
 import type { Metadata } from "next";
-import { Heading } from "@/components/typography";
 
-const Console = dynamic(() => import("@/components/console"), {
+const Console = dynamic(() => import("@/packages/components/console"), {
   loading: () => <></>,
 });
 
